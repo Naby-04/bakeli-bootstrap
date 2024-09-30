@@ -1,0 +1,224 @@
+/* TABLE OF CONTENTS */
+/* -------------------
+1.General
+2.Navbar
+3.Banner
+4.About
+5.Services
+6.Portfolio
+7.Contacts
+8.Footer
+--------------------*/
+
+/* 1. General */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* border: 1px solid red; */
+  font-family: "Montserrat" sans-serif;
+}
+
+:root {
+  /* Background Color */
+  --primary-color: #009688;
+  --secondary-color: #eef9f8e5;
+  /* Text Color */
+  --primary-font: sans-serif;
+}
+
+body {
+  font-family: var(--primary-font);
+  overflow-x: hidden;
+}
+a {
+  text-decoration: none;
+}
+h2 {
+  font-size: 25px;
+}
+h3 {
+  font-size: 20px;
+}
+input:hover,
+input:focus,
+textarea:hover,
+textarea:focus,
+button {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/*------------------------------------ 2.Navbar ------------------------------------*/
+
+.header-wrapper .navbar {
+  padding: 20px 0;
+}
+.navbar .btn-warning {
+  background: #ff9800;
+  border: none;
+}
+.navbar .navbar-nav {
+  gap: 15px;
+}
+.navbar span i {
+  margin-left: 50px;
+  cursor: pointer;
+}
+.header-wrapper .nav-item .nav-link {
+  position: relative;
+  font-size: 16px;
+  font-weight: 500;
+  display: inline-block;
+}
+.header-wrapper .nav-item .nav-link::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--primary-color);
+  transition: 0.3s;
+  bottom: 0;
+}
+.header_wrapper .nav-item .nav-link .active::after,
+.header_wrapper .nav-item .nav-link:hover::after {
+  width: 100%;
+}
+
+/*-------------------------------- 3.Banner --------------------------------*/
+
+.banner-wrapper {
+  width: 100%;
+  /* height: 100vh; */
+  /* min-height: 650px; */
+  padding: 60px 0;
+  /* background: black; */
+}
+.banner-text {
+  background: linear-gradient(to right, #0d423de5, #0cc7b5e5);
+  height: 452px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.banner-text p {
+  max-width: 503px;
+}
+.button-active {
+  background: #f44336;
+  color: #fff;
+  font-size: 15px;
+  padding: 5px 20px;
+  border: none;
+  border-radius: 5px;
+}
+.banner-image {
+  /* position: relative; */
+  left: 130px;
+}
+.header-scrolled {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--primary-color);
+  -webkit-box-shadow: 0 4px 6px 0 rgba(12, 0, 46, 0.05);
+  box-shadow: 0 4px 6px 0 rgba(12, 0, 46, 0.05);
+}
+
+/*---------------------------------- 4.programme ----------------------------------*/
+
+.formation > div {
+  background: #009688;
+  /* height: 527px; */
+}
+.About {
+  /* height: 462px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border: 1px solid #009688;
+}
+.About button {
+  width: 116px;
+  margin: 0 auto;
+}
+.domaine {
+  color: #fff;
+  margin-left: 10px;
+}
+.programme1 {
+  border: 1px solid #f44336;
+  padding: 20px 0;
+  border-radius: 20px;
+}
+.programme2 {
+  border: 1px solid #009688;
+  padding: 16px 0;
+  border-radius: 20px;
+}
+.programme3 {
+  border: 1px solid #ff9800;
+  padding: 20px 0;
+  border-radius: 20px;
+}
+.programme4 {
+  border: 1px solid #009688;
+  padding: 23px 0;
+  border-radius: 20px;
+}
+
+/*---------------------------------- 5.campus ----------------------------------*/
+
+.campus-wrapper {
+  background: #f44336;
+}
+
+/*---------------------------------- 6.admission ----------------------------------*/
+
+.coachs button {
+  margin: auto;
+}
+.coach {
+  border: 1px solid #009688;
+}
+.vector {
+  rotate: -180deg;
+  position: relative;
+  /* right: 100px; */
+}
+
+/*---------------------------------- 7.evenements ----------------------------------*/
+
+#evenements {
+  background: #f44336;
+}
+
+/*---------------------------------- 8.blog ----------------------------------*/
+
+#blog .row {
+  background: #eef9f8e5;
+}
+#blog .row .col-12 .text-center {
+  background: #fff;
+  box-shadow: 0px 3px 5px;
+  height: 150px;
+}
+
+/*---------------------------------- 9.Footer ----------------------------------*/
+
+footer {
+  background: var(--primary-color);
+  color: #fff;
+}
+footer a {
+  color: #fff;
+  transition: all 0.2s;
+}
+footer a:hover {
+  text-decoration: underline;
+  color: #fff;
+}
